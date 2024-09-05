@@ -1,0 +1,89 @@
+{
+    "common": {
+        "name": "kia-hyundai-connect",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Kia & Hyundai Connect",
+        "titleLang": {
+            "en": "Kia & Hyundai Connect",
+            "de": "Kia & Hyundai Connect",
+            "ru": "Kia & Hyundai Connect",
+            "pt": "Kia & Hyundai Connect",
+            "nl": "Kia & Hyundai Connect",
+            "fr": "Kia & Hyundai Connect",
+            "it": "Kia & Hyundai Connect",
+            "es": "Kia & Hyundai Connect",
+            "pl": "Kia & Hyundai Connect",
+            "zh-cn": "Kia & Hyundai Connect"
+        },
+        "desc": {
+            "en": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "de": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "ru": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "pt": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "nl": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "fr": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "it": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "es": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "pl": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+            "zh-cn": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home."
+        },
+        "authors": ["DNAngelX <stolly82@web.de>"],
+        "keywords": [
+            "kia",
+            "hyundai",
+            "bluelink",
+            "uvo",
+            "car",
+            "vehicle",
+            "EV",
+            "smart home",
+            "iobroker",
+            "climate",
+            "battery",
+            "remote control"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "kia-hyundai-connect.jpg",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/DNAngelX/ioBroker.kia-hyundai-connect/main/admin/kia-hyundai-connect.jpg",
+        "readme": "https://github.com/DNAngelX/ioBroker.kia-hyundai-connect/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "vehicle",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {},
+    "objects": [],
+    "instanceObjects": []
+}

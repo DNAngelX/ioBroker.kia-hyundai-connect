@@ -1,0 +1,96 @@
+{
+  "name": "iobroker.kia-hyundai-connect",
+  "version": "0.0.1",
+  "description": "This adapter allows integration of Kia and Hyundai vehicles into IoBroker using the Kia UVO or Hyundai Bluelink API. It enables monitoring vehicle status, controlling the climate system, managing the battery charging process, and automating various vehicle functions directly within your smart home.",
+  "author": {
+    "name": "DNAngelX",
+    "email": "stolly82@web.de"
+  },
+  "homepage": "https://github.com/DNAngelX/ioBroker.kia-hyundai-connect",
+  "license": "MIT",
+  "keywords": [
+    "kia",
+    "hyundai",
+    "bluelink",
+    "uvo",
+    "car",
+    "vehicle",
+    "EV",
+    "smart home",
+    "iobroker",
+    "climate",
+    "battery",
+    "remote control"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DNAngelX/ioBroker.kia-hyundai-connect.git"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.1.6"
+  },
+  "devDependencies": {
+    "@alcalzone/release-script": "^3.8.0",
+    "@alcalzone/release-script-plugin-iobroker": "^3.7.2",
+    "@alcalzone/release-script-plugin-license": "^3.7.0",
+    "@alcalzone/release-script-plugin-manual-review": "^3.7.0",
+    "@iobroker/adapter-dev": "^1.3.0",
+    "@iobroker/testing": "^4.1.3",
+    "@tsconfig/node14": "^14.1.2",
+    "@types/chai": "^4.3.19",
+    "@types/chai-as-promised": "^8.0.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^14.18.63",
+    "@types/proxyquire": "^1.3.31",
+    "@types/sinon": "^17.0.3",
+    "@types/sinon-chai": "^3.2.12",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "chai": "^5.1.1",
+    "chai-as-promised": "^8.0.0",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "mocha": "^9.2.2",
+    "prettier": "^3.3.3",
+    "proxyquire": "^2.1.3",
+    "rimraf": "^6.0.1",
+    "sinon-chai": "^4.0.0",
+    "sinon": "^13.0.2",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2",
+    "typescript": "~4.6.4"
+  },
+  "main": "build/main.js",
+  "files": [
+    "admin{,/!(src)/**}/!(tsconfig|tsconfig.*|.eslintrc).json",
+    "admin{,/!(src)/**}/*.{html,css,png,svg,jpg,js}",
+    "build/",
+    "www/",
+    "io-package.json",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "build-adapter ts",
+    "watch": "build-adapter ts --watch",
+    "prebuild:ts": "rimraf build",
+    "build:ts": "build-adapter ts",
+    "watch:ts": "build-adapter ts --watch",
+    "test:ts": "mocha --config test/mocharc.custom.json src/**/*.test.ts",
+    "test:package": "mocha test/package --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:ts && npm run test:package",
+    "check": "tsc --noEmit",
+    "lint": "eslint --ext .ts src/",
+    "translate": "translate-adapter",
+    "release": "release-script"
+  },
+  "bugs": {
+    "url": "https://github.com/DNAngelX/ioBroker.kia-hyundai-connect/issues"
+  },
+  "readmeFilename": "README.md"
+}
